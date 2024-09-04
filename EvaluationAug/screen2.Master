@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="screen2.master.cs" Inherits="EvaluationAug.screen2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Screen2</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <style>
+        #header {
+            background-color: #1B2632;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 42px;
+            width: 100%;
+        }
+
+        #logo {
+            border-radius: 2px;
+            height: 38px;
+            width: 10%;
+        }
+
+        #heading {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            width: 73%
+        }
+
+        #profile {
+            border-radius: 50%;
+            margin-right: 5px;
+            height: 80%;
+            width: 5%;
+        }
+
+        #button {
+            border-radius: 4px;
+            color: #2C0E57;
+            background-color: white;
+            height: 38px;
+            width: 10%;
+        }
+
+        #navigation {
+            background-color: #394B59;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+           height:100%;
+        }
+
+        .btn {
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header" class="head">
+            <img id="logo" src="images/AmitLogo.jpg" alt="AMIT LOGO" />
+            <label id="heading">TPM-Trak Analytics</label>
+            <img id="profile" src="images/profilephoto.jpeg" alt="AMIT LOGO" />
+            <button id="button">Company Logo</button>
+        </div>
+        <div style="display:flex;flex-direction:row; height:100%;">
+            <div id="navigation">
+                <button class="btn" style="">Historical Analytics</button>
+                <button class="btn">Live Analytics</button>
+                <button class="btn">Smart shop</button>
+                <button class="btn">Bajaj Analytics</button>
+                <button class="btn">User Access</button>
+                <button class="btn">Settings</button>
+            </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

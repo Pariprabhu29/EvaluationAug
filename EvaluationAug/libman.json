@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "highcharts@11.4.8",
+      "destination": "lib/highcharts/"
+    },
+    {
+      "library": "bootstrap@5.3.3",
+      "destination": "lib/bootstrap/"
+    }
+  ]
+}
